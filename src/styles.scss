@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-layout {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.grid {
+	border: 1px solid;
+}
+
+.grid__row {
+	display: flex;
+}
+
+.grid__cell {
+	width: 5vh;
+	height: 5vh;
+	border: 1px solid;
+
+	&.start {
+		background: #e72e2e;
+	}
+
+	&.end {
+		background: #5050c0;
+	}
+
+	&.partition {
+		background: #a7a7b8;
+	}
+
+	&.visited {
+		background: #8be8a8;
+	}
+
+	&.path {
+		background: yellow;
+	}
+}
+
+.grid-menu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: rgba(0, 0, 0, .6);
+	border-radius: 4px;
+	padding: 30px 30px 15px;
+
+	button {
+		outline: none;
+		border: none;
+		display: block;
+		width: 160px;
+		height: 40px;
+		background: #fff;
+		margin-bottom: 15px;
+		border-radius: 4px;
+		cursor: pointer;
+
+		&.active {
+			border: 1px solid;
+		}
+	}
+}
+
+#start-point {
+	background: #e72e2e;
+}
+
+#end-point {
+	background: #5050c0;
+}
+
+#partition {
+	background: #a7a7b8;
+}
+
+#search {
+	background: yellow;
+}
