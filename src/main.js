@@ -120,7 +120,6 @@ function searchPath() {
 	let visitedPoints = [];
 	let  checkingPoints = [startPoint];
 	let currentCheckingPoint = startPoint;
-	let aa = 0;
 
 	while (true) {
 		checkingPoints = setCheckingPoints(currentCheckingPoint, visitedPoints, checkingPoints);
